@@ -25,4 +25,4 @@ jobs:
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/lan-gaming:latest
 
       - name: Deploy to server
-        run: curl https://api.render.com/deploy/srv-d04bc7c9c44c739fespg?key=NdfScgLRtgI 
+        run: curl ${{ secrets.RENDER_URL }}
